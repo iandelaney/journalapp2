@@ -16,15 +16,23 @@ def run_event_loop():
 
     while cmd != "x":
         cmd = input("[L]ist entries, [A]dd an entry, or e[x]it: ")
-        if cmd.lower() == "l":
-            print("L")
-        elif cmd.lower() == "a":
-            print ("A")
-        elif cmd.lower() != 'x':
+        cmd = cmd.lower().strip()
+        if cmd == "l":
+            list_entries()
+        elif cmd == "a":
+            add_entry()
+        elif cmd != 'x':
             print("Sorry, we don't understand '{}'".format(cmd))
 
 
     print("Done. Goodbye.")
 
+
+def list_entries():
+    print("Listing...")
+
+
+def add_entry():
+    print("Adding...")
 
 main()
