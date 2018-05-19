@@ -16,11 +16,11 @@ def run_event_loop():
 
     while cmd != "x":
         cmd = input("[L]ist entries, [A]dd an entry, or e[x]it: ")
-        if cmd == "L":
+        if cmd.lower() == "l":
             print("L")
-        elif cmd == "A":
+        elif cmd.lower() == "a":
             print ("A")
-        elif cmd != 'x':
+        elif cmd.lower() != 'x':
             print("Sorry, we don't understand '{}'".format(cmd))
 
 
