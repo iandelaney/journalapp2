@@ -1,0 +1,2 @@
+# journalapp
+Practice app - ignore
